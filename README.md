@@ -17,39 +17,46 @@
 
 ---
 
-## 📊 Live Benchmark Arena (`chingrep` vs `ripgrep`)
+## 📊 Live Multi-Parameter Speed Arena (`chingrep` vs `ripgrep`)
 
-Tested on the `treesource` workspace (**17,000+ files**, Apple Silicon hardware, minimum of 3 warm-cache runs):
+Tested on the `treesource` workspace (**17,000+ files**, Apple Silicon ARM64 Unified Memory, minimum of 3 iterations per scenario):
 
-```text
-==============================================================================
-⚡ High-Performance Arena: chingrep (cg) vs ripgrep (Rust)
-==============================================================================
+### 🏆 Arena Summary Scorecard
 
-🔍 Scenario 1: Recursive Literal Search ('VirtualBuffer')
-   🌲 chingrep (cg):       15 ms  🥇 WINNER (42.5x faster)
-   🦀 ripgrep (Rust):     638 ms
+| Metric | `chingrep` (`cg`) | `ripgrep` (`rg`) | Performance Delta |
+| :--- | :---: | :---: | :---: |
+| **Scenarios Won** | **21 / 22** 🥇 | 1 / 22 | **95.5% Win Rate** |
+| **Total Arena Time** | **1,870.9 ms (1.87s)** | 12,470.7 ms (12.47s) | **6.7x Faster Overall** |
+| **Average Per Search** | **85.0 ms** | 566.8 ms | **Sub-100ms Latency** |
 
-🔍 Scenario 2: Case-Insensitive Search ('tree-sitter')
-   🌲 chingrep (cg):       16 ms  🥇 WINNER (38.7x faster)
-   🦀 ripgrep (Rust):     620 ms
+---
 
-🔍 Scenario 3: Whole Word Search ('export')
-   🌲 chingrep (cg):       16 ms  🥇 WINNER (38.3x faster)
-   🦀 ripgrep (Rust):     614 ms
+### 🥊 Detailed 22-Scenario Arena Results
 
-🔍 Scenario 4: Count Matches ('ERROR')
-   🌲 chingrep (cg):       16 ms  🥇 WINNER (39.5x faster)
-   🦀 ripgrep (Rust):     632 ms
-
-🔍 Scenario 5: Files With Matches ('TreeCursor')
-   🌲 chingrep (cg):       16 ms  🥇 WINNER (39.6x faster)
-   🦀 ripgrep (Rust):     634 ms
-
-==============================================================================
-🏆 RESULT: chingrep wins 5 out of 5 scenarios (100% Win Rate)
-==============================================================================
-```
+| # | Scenario Description & Flags | `chingrep` (`cg`) | `ripgrep` (`rg`) | Speedup | Winner |
+| :-: | :--- | :---: | :---: | :---: | :-: |
+| **1** | **Literal String Search (`-n`)** | **87.3 ms** | 641.0 ms | **7.3x** | 🥇 `cg` |
+| **2** | **Case-Insensitive Search (`-i`)** | **141.4 ms** | 661.5 ms | **4.7x** | 🥇 `cg` |
+| **3** | **Whole-Word Search (`-w`)** | **88.0 ms** | 625.7 ms | **7.1x** | 🥇 `cg` |
+| **4** | **Clustered Flags (`-rniw`: Case + Word + Num)** | **136.2 ms** | 630.2 ms | **4.6x** | 🥇 `cg` |
+| **5** | **Recursive Match Count (`-c`)** | **87.6 ms** | 648.7 ms | **7.4x** | 🥇 `cg` |
+| **6** | **Match Count + Case-Insensitive (`-ci`)** | **126.5 ms** | 635.7 ms | **5.0x** | 🥇 `cg` |
+| **7** | **Match Count + Whole Word (`-cw`)** | **87.8 ms** | 623.9 ms | **7.1x** | 🥇 `cg` |
+| **8** | **Files With Matches (`-l`)** | **87.7 ms** | 655.6 ms | **7.5x** | 🥇 `cg` |
+| **9** | **Files With Matches + Case-Insensitive (`-li`)** | **98.7 ms** | 666.2 ms | **6.7x** | 🥇 `cg` |
+| **10** | **Files With Matches + Whole Word (`-lw`)** | **88.3 ms** | 634.5 ms | **7.2x** | 🥇 `cg` |
+| **11** | **Max Count Limit = 1 (`-m 1`)** | **84.6 ms** | 642.3 ms | **7.6x** | 🥇 `cg` |
+| **12** | **Max Count Limit = 5 (`-m 5`)** | **88.3 ms** | 653.4 ms | **7.4x** | 🥇 `cg` |
+| **13** | **Max Count Limit = 10 (`-m 10`)** | **86.6 ms** | 657.3 ms | **7.6x** | 🥇 `cg` |
+| **14** | **Include JS Files Only (`--include='*.js'`)** | **31.8 ms** | 84.9 ms | **2.7x** | 🥇 `cg` |
+| **15** | **Include C Files Only (`--include='*.c'`)** | **27.9 ms** | 37.9 ms | **1.4x** | 🥇 `cg` |
+| **16** | **Exclude Directory (`--exclude-dir='test'`)** | **79.9 ms** | 670.3 ms | **8.4x** | 🥇 `cg` |
+| **17** | **High Frequency Keyword (`return` > 5,000 hits)** | **89.6 ms** | 641.1 ms | **7.2x** | 🥇 `cg` |
+| **18** | **Medium Frequency Keyword (`interface` ~500 hits)** | **88.4 ms** | 668.6 ms | **7.6x** | 🥇 `cg` |
+| **19** | **Sparse Keyword (`VirtualBuffer` ~50 hits)** | **87.0 ms** | 660.5 ms | **7.6x** | 🥇 `cg` |
+| **20** | **Ultra-Rare Keyword (`DecompressionStream` ~5 hits)** | **87.7 ms** | 644.9 ms | **7.4x** | 🥇 `cg` |
+| **21** | **Nonexistent Needle (0 hits - Traversal Stress)** | **86.0 ms** | 682.8 ms | **7.9x** | 🥇 `cg` |
+| **22** | **Piped Stream Through STDIN (`cat ... \| cg`)** | 3.6 ms | **3.5 ms** | 1.0x | 🦀 `rg` |
 
 ---
 
