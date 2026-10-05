@@ -15,6 +15,6 @@ cg
 .idea/
 *.swp
 *.swo
-
+*.py
 # Temporary files
 *.tmp
