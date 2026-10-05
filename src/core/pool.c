@@ -1,3 +1,9 @@
+/*
+ * Author: Wirote Chukeaw (chin6700x)
+ * Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+ * License: MIT License
+ */
+
 #include "pool.h"
 #include "../asm/simd_engine.h"
 #include <stdio.h>

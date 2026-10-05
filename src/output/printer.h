@@ -1,5 +1,11 @@
-#ifndef ASMGREP_PRINTER_H
-#define ASMGREP_PRINTER_H
+/*
+ * Author: Wirote Chukeaw (chin6700x)
+ * Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+ * License: MIT License
+ */
+
+#ifndef CHINGREP_PRINTER_H
+#define CHINGREP_PRINTER_H
 
 #include <stddef.h>
 #include <stdint.h>

@@ -1,3 +1,9 @@
+/*
+ * Author: Wirote Chukeaw (chin6700x)
+ * Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+ * License: MIT License
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -17,7 +23,7 @@
 static void print_usage(void) {
     printf("chingrep v%s (Ultra-Fast Hardware-Accelerated Grep)\n", CHINGREP_VERSION);
     printf("Engine: %s\n", simd_get_engine_name());
-    printf("Author: Wirote Chukeaw <chin6700x@gmail.com>\n\n");
+    printf("Author: Wirote Chukeaw (chin6700x)\n\n");
     printf("Usage:\n");
     printf("  chingrep [OPTIONS] <PATTERN> [PATH ...]\n");
     printf("  cg       [OPTIONS] <PATTERN> [PATH ...] (short alias)\n\n");

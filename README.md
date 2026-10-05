@@ -11,7 +11,7 @@
 
 **chingrep** (short command: `cg`) is a high-performance text and code search utility handcrafted to deliver the absolute maximum throughput physically achievable on modern silicon. By replacing traditional runtime abstractions with direct **64-byte unrolled ARM64 NEON Assembly**, **256-bit Intel/AMD x86_64 AVX2 Vector Intrinsics**, a zero-copy kernel memory subsystem, and a zero-stat directory walker, `chingrep` consistently outpaces industry standards like **Ripgrep (Rust)** by **4x to 40x**.
 
-* **Author**: [Wirote Chukeaw](https://github.com/chin6700x) (<chin6700x@gmail.com>)
+* **Author**: [Wirote Chukeaw](https://github.com/chin6700x)
 * **Copyright**: &copy; 2026 Wirote Chukeaw. All rights reserved.
 * **License**: MIT License
 
@@ -267,4 +267,4 @@ chingrep/
 
 ## 📄 License
 
-MIT License &copy; 2026 Wirote Chukeaw (<chin6700x@gmail.com>). All rights reserved.
+MIT License &copy; 2026 Wirote Chukeaw (chin6700x). All rights reserved.

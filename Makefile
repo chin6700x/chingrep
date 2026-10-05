@@ -1,3 +1,9 @@
+#
+# Author: Wirote Chukeaw (chin6700x)
+# Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+# License: MIT License
+#
+
 CC ?= clang
 CFLAGS = -O3 -Wall -Wextra -pthread -fomit-frame-pointer
 ASFLAGS = -O3 -Wall

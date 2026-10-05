@@ -53,5 +53,3 @@ bash arena/run-arena.sh [TARGET_DIR]
 ---
 
 ## 📄 Official Benchmark Whitepaper
-Detailed timings and speedup multiples are exported to:
-👉 [ARENA_REPORT.md](file:///Volumes/Mac%20Backup/htdocs/treesource/chingrep/arena/ARENA_REPORT.md)

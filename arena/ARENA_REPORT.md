@@ -8,6 +8,10 @@
 - **chingrep Engine**: `chingrep 1.0.0 (ARM64 NEON (Apple Silicon Hand-Tuned Assembly))`
 - **ripgrep Engine**: `ripgrep 15.2.0 (rev e89fff89ac)`
 
+- **Author**: [Wirote Chukeaw](https://github.com/chin6700x)
+- **Copyright**: &copy; 2026 Wirote Chukeaw. All rights reserved.
+- **License**: MIT License
+
 ---
 
 ## 📊 Summary Scorecard

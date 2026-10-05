@@ -1,6 +1,8 @@
 // ==============================================================================
-// asmgrep: Ultra-Fast ARM64 NEON Substring & Character Search Kernels
-// File: asmgrep/src/asm/simd_arm64.s
+// chingrep: Ultra-Fast ARM64 NEON Substring & Character Search Kernels
+// Author: Wirote Chukeaw (chin6700x)
+// Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+// License: MIT License
 //
 // Description: Hand-crafted 64-byte unrolled ARM64 NEON vector search.
 //              Optimized for Apple Silicon 8-wide decode and 4 NEON pipes.

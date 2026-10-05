@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
-# Project: asmgrep
-# File: test/benchmark.sh
-# Description: Speed Arena: asmgrep (ARM64 Assembly) vs ripgrep (Rust) vs nodegrep (JS)
+# ==============================================================================
+# chingrep (cg) vs ripgrep Speed Arena
+# Author: Wirote Chukeaw (chin6700x)
+# Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+# License: MIT License
+# ==============================================================================
 
 DIR="$(cd "$(dirname "$0")/.." && pwd)"
 TARGET_DIR="${1:-$DIR/..}"

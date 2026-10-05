@@ -1,6 +1,8 @@
 // ==============================================================================
-// asmgrep: Ultra-Fast ARM64 NEON Newline Counter
-// File: asmgrep/src/asm/newline_count.s
+// chingrep: Ultra-Fast ARM64 NEON Newline Counter
+// Author: Wirote Chukeaw (chin6700x)
+// Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+// License: MIT License
 //
 // Description: Counts newline characters (0x0A) in a memory range [buf, buf + len)
 //              using 64-byte unrolled NEON SIMD vector accumulators.

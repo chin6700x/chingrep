@@ -1,3 +1,9 @@
+/*
+ * Author: Wirote Chukeaw (chin6700x)
+ * Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+ * License: MIT License
+ */
+
 #include "gitignore.h"
 #include <stdio.h>
 #include <stdlib.h>

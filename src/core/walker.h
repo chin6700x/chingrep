@@ -1,5 +1,11 @@
-#ifndef ASMGREP_WALKER_H
-#define ASMGREP_WALKER_H
+/*
+ * Author: Wirote Chukeaw (chin6700x)
+ * Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+ * License: MIT License
+ */
+
+#ifndef CHINGREP_WALKER_H
+#define CHINGREP_WALKER_H
 
 #include "pool.h"
 #include "gitignore.h"

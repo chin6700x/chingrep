@@ -1,5 +1,11 @@
-#ifndef ASMGREP_SIMD_ARM64_H
-#define ASMGREP_SIMD_ARM64_H
+/*
+ * Author: Wirote Chukeaw (chin6700x)
+ * Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+ * License: MIT License
+ */
+
+#ifndef CHINGREP_SIMD_ARM64_H
+#define CHINGREP_SIMD_ARM64_H
 
 #include <stddef.h>
 #include <stdint.h>

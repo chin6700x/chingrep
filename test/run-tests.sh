@@ -1,7 +1,9 @@
 #!/bin/bash
 # ==============================================================================
-# asmgrep -> chingrep: 100-Scenario Comprehensive Automated Test Suite
-# File: test/run-tests.sh
+# chingrep (cg): 100-Scenario Comprehensive Automated Test Suite
+# Author: Wirote Chukeaw (chin6700x)
+# Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+# License: MIT License
 # ==============================================================================
 
 set -e

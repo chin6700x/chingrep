@@ -1,6 +1,8 @@
 // ==============================================================================
-// asmgrep: Ultra-Fast ARM64 NEON Binary Probe
-// File: asmgrep/src/asm/binary_probe.s
+// chingrep: Ultra-Fast ARM64 NEON Binary Probe
+// Author: Wirote Chukeaw (chin6700x)
+// Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+// License: MIT License
 //
 // Description: Scans the first 512 bytes of a buffer for null bytes (0x00).
 //              Uses 64-byte unrolled NEON SIMD to finish in ~8 vector operations.
