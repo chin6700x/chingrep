@@ -2,8 +2,8 @@
 
 # ==============================================================================
 # chingrep (cg) vs ripgrep Speed Arena
-# Author: Wirote Chukeaw (chin6700x)
-# Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+# Author: Wirot Chookeaw (chin6700x)
+# Copyright: (c) 2026 Wirot Chookeaw. All rights reserved.
 # License: MIT License
 # ==============================================================================
 

@@ -1,7 +1,7 @@
 // ==============================================================================
 // chingrep: Ultra-Fast ARM64 NEON Substring & Character Search Kernels
-// Author: Wirote Chukeaw (chin6700x)
-// Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+// Author: Wirot Chookeaw (chin6700x)
+// Copyright: (c) 2026 Wirot Chookeaw. All rights reserved.
 // License: MIT License
 //
 // Description: Hand-crafted 64-byte unrolled ARM64 NEON vector search.

@@ -2,8 +2,8 @@
 
 # ==============================================================================
 # chingrep (cg) vs ripgrep (rg) Multi-Parameter Speed Arena
-# Author: Wirote Chukeaw (chin6700x)
-# Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+# Author: Wirot Chookeaw (chin6700x)
+# Copyright: (c) 2026 Wirot Chookeaw. All rights reserved.
 # License: MIT License
 
 set -e
@@ -242,8 +242,8 @@ cat <<EOF > "$REPORT_FILE"
 
 - **chingrep Engine**: \`$CG_VER\`
 - **ripgrep Engine**: \`$RG_VER\`
-- **Author**: [Wirote Chukeaw](https://github.com/chin6700x)
-- **Copyright**: &copy; 2026 Wirote Chukeaw. All rights reserved.
+- **Author**: [Wirot Chookeaw](https://github.com/chin6700x)
+- **Copyright**: &copy; 2026 Wirot Chookeaw. All rights reserved.
 - **License**: MIT License
 
 ---

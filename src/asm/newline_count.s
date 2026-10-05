@@ -1,7 +1,7 @@
 // ==============================================================================
 // chingrep: Ultra-Fast ARM64 NEON Newline Counter
-// Author: Wirote Chukeaw (chin6700x)
-// Copyright: (c) 2026 Wirote Chukeaw. All rights reserved.
+// Author: Wirot Chookeaw (chin6700x)
+// Copyright: (c) 2026 Wirot Chookeaw. All rights reserved.
 // License: MIT License
 //
 // Description: Counts newline characters (0x0A) in a memory range [buf, buf + len)
